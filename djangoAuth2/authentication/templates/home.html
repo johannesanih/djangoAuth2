@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="color: green;">Welcome to Geeksforgeeks ????</title>
+    <style>
+        .container {
+            text-align: center;
+            margin: 100px auto;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1,h2,h3 {
+            color: #1b69c2;
+            font-weight: bold;
+        }
+
+        img {
+            width: 60%;
+        }
+
+        #logout-button {
+            margin: 10px;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: #1b69c2;
+            color: white;
+            text-decoration: none;
+            transition: .3s ease-in-out;
+        }
+        #logout-button:hover, #logout-button:active {
+            background-color: #6fbdde
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Page heading -->
+        <h2>{{ user.username }}</h2>
+        <h3>Welcome!</h3>
+        
+        <!-- Animated GIF -->
+        <!-- Use "welcome.gif" as the source for the GIF -->
+        <img src="https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1" alt="Welcome Cartoon"><br><br>
+        <a id="logout-button" href="/logout/">Logout</a>
+    </div>
+</body>
+</html>
